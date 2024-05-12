@@ -34,9 +34,10 @@ else {
 
 
 // Função para imprimir 
-function print(nomeHeroi, nivel, quantidadeXp) {
-        console.log(`O Herói de nome **${nomeHeroi}** está no nível de **${nivel}**com ${quantidadeXp} XP`);
+function main(nomeHeroi, quantidadeXp) {
+        let nivel = nivelXP(quantidadeXp)
+        console.log(`O Herói de nome **${nomeHeroi}** está no nível **${nivel}**com ${quantidadeXp} XP`);
     };
 
 
-export {print, nivelXP};
+export {main};
